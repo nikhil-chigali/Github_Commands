@@ -27,6 +27,11 @@ $ git config --global color.ui true
 # To list out all the global settings linked with your git, just type
 $ git config --list
 
+# To get documentation about any git command, 
+$ git help git_command
+
+## Example::	$ git help config
+
 # Now, To initialize a git repository, 
 # Go to your project folder and type in 
 $ git init
@@ -43,7 +48,7 @@ $ git add -A
 # adds all the files to the staging area
 
 $ git add -p
-# ------------
+# lists out the file changes one my one and asks the user whether to stage the change or not
 
 # After the changes are staged, all we need to do is commit those changes
 # In order to commit the changes made in our repository, type the command,
@@ -63,6 +68,13 @@ $ git log
 
 # If you just need the list of past commits and nothing else, you could use
 $ git log --oneline
+
+# Say you have a folder which is contains personal details or you dont want that to be considered for staging,
+# What you could do is, 
+# create a .gitignore file and open it
+# enter the name of the file that you want git to ignore
+# save the gitignore file and exit
+# now try running git status command , and you can see that git no longer considers that file for staging
 
 
 
