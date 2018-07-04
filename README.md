@@ -4,6 +4,8 @@ It is widely used among developers,
 	to maintain and track multiple versions of their projects,etc.,
 Infact, github can be used to showcase your projects and used as your new Resume.
 
+Github was recently bought by Microsoft for $ 7.5Million!!!!
+
 Following are some of the commands that'll get you started with github,
 
 But first, Go to "https://git-scm.com/downloads" and download & install the latest version of git on your computer. Open your control panel and try out the following commands,
@@ -50,6 +52,13 @@ $ git add -A
 $ git add -p
 # lists out the file changes one my one and asks the user whether to stage the change or not
 
+# What if you staged some change by mistake and you want to unstage it, 
+$ git reset file
+# This command unstages the 'file' from the staging area
+
+$ git reset
+# This command unstages everything from the staging area
+
 # After the changes are staged, all we need to do is commit those changes
 # In order to commit the changes made in our repository, type the command,
 $ git commit -m "Some message describing the changes that have been made in the repo"
@@ -64,7 +73,7 @@ $ git status
 # Say you are working on some big project and you ended up making so many commits on your repo that you lost track of it, 
 # In such a case, you can just type in, 
 $ git log
-# This command gives all the information about your past commits, time of commit, author, etc.,
+# This command gives all the information about your past commits, time of commit, author who made the commit and the unique hash value of each commit.
 
 # If you just need the list of past commits and nothing else, you could use
 $ git log --oneline
@@ -76,6 +85,30 @@ $ git log --oneline
 # save the gitignore file and exit
 # now try running git status command , and you can see that git no longer considers that file for staging
 
+## Until now we saw how to commit changes to our local Repo
+# Lets see how to clone remote Repositories and push our local repositories to remote repos
 
+# To clone a remote repo, 
+$ git clone <url_of_the_remote_repo> location_to_clone
 
+# Once cloned, you can view the status of the remote repo by using, 
+$ git remote -v
+
+# To view info abt branches in both remote and locally cloned repo, 
+$ git branch -a
+
+## After making any changes to local repo, to push it into the remote repo, 
+
+$ git diff
+# Shows the changes made to the local repo
+
+$ git add .
+$ git commit -m "message"
+
+# Pushing to the remote repo, 
+$ git pull origin master
+# This command will pull any changes that have been made till the last time we pulled from the repository
+
+$ git push origin master
+# Pushes the local repository to remote repository
 
