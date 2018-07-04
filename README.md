@@ -112,3 +112,36 @@ $ git pull origin master
 $ git push origin master
 # Pushes the local repository to remote repository
 
+# To list out all the branches
+$ git branch
+
+# To create a branch
+$ git branch branchA
+
+# To switch to branchA
+$ git checkout branchA
+
+# To push branchA to remote Repository
+$ git push -u origin branchA
+
+# To check remote branch status
+$ git branch -a
+
+# To list all the merges that have been performed
+$ git branch --merged
+
+# To merge branchA to master
+$ git checkout master
+$ git pull origin master
+$ git branch --merged
+$ git branch merge branchA
+$ git push origin master
+
+# To delete branchA
+$ git branch -d branchA
+$ git branch -a
+$ git push origin --delete branchA
+# This deletes branchA from the remote repository too
+
+
+
