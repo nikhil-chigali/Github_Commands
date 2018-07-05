@@ -150,5 +150,6 @@ $ git push origin --delete branchA
 ```
 ### This deletes branchA from the remote repository too
 
-
+### To set the remote repo's link to origin
+`$ git remote add origin <url>`
 
